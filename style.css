@@ -116,3 +116,34 @@ header img {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+canvas {
+    max-width: 100%;
+    display: block;
+}
+
+.biggerkurs {
+    background-color: white;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.kurs {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.textOmKurs{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1%;
+    max-width: 400px;
+    overflow: hidden;
+    flex: 1;
+}
