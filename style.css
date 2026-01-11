@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 header {
@@ -10,6 +11,8 @@ header {
     border-bottom: 2px solid black;
     padding: 20px;
     max-height: 70px;
+    position: relative;
+    z-index: 1;
 }
 
 header img {
@@ -17,9 +20,10 @@ header img {
     height: 70px;
 }
 
+
 .slideshow {
     position: relative;
-    max-width: 960px;
+    max-width: 1280px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -52,22 +56,63 @@ header img {
 .slideshow > div p {
     display: block;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     margin: 0;
-    padding: 0 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slideshow > div h1 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .slideshow > div p {
     font-size: 1.1em;
+    border-radius: 0 0 5px 5px;
+}
+
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.slideshow button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
     left: 10px;
 }
 
+.next {
+    right: 10px;
+}
 
+
+.Introduktion{
+    max-width: 62%;
+    margin-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.Introduktion h1{
+    text-decoration: underline;
+    font: bold;
+}
+
+.biggerinctruction{
+    background-color: beige;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
