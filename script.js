@@ -16,12 +16,9 @@ const imageSources = [
 
 const preloadedImages = [];
 
-images.forEach(src => {
-  const img = new Image();
-  img.src = src;
-  img.decode().then(() => {
-    decodedImages.push(img);
-  });
+imageSources.forEach(src => {
+    const img = new Image();
+    img.src = src;
 });
 
 document.addEventListener('DOMContentLoaded', function() {
