@@ -27,32 +27,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event to the span for playing animation
     const videoSpan = document.querySelector('.intervjuer span');
     let playAudio=false;
-    let firstIntervju= new Audio('assests/August_Persson_2B.mp3');
+    let firstIntervju= new Audio('/assests/August_Persson_2B.mp3');
     if (videoSpan) {
         videoSpan.addEventListener('click', function() {
             
             if(playAudio===false){
-                videoSpan.style.backgroundImage = "url('assests/play_Filip.gif')";
+                videoSpan.style.backgroundImage = "url('/assests/play_Filip.gif')";
                 playAudio=true;
                 firstIntervju.play();
                 
             setTimeout(function() {
-                videoSpan.style.backgroundImage = "url('assests/slut_Filip.jpg')";
+                videoSpan.style.backgroundImage = "url('/assests/slut_Filip.jpg')";
             }, 150);
-            }
+            } 
             else{
-                videoSpan.style.backgroundImage = "url('assests/stop_Filip.gif')";
+                videoSpan.style.backgroundImage = "url('/assests/stop_Filip.gif')";
                 playAudio=false;
                 firstIntervju.pause();
                 setTimeout(function() {
-                videoSpan.style.backgroundImage = "url('assests/start_Filip.jpg')";
+                videoSpan.style.backgroundImage = "url('/assests/start_Filip.jpg')";
             }, 150);
             }
         });
 
         videoSpan.addEventListener('mouseout', function() {
             if (playAudio === false) {
-                videoSpan.style.backgroundImage = "url('assests/Filip.jpg')";
+                videoSpan.style.backgroundImage = "url('/assests/Filip.jpg')";
             }
         });
         videoSpan.addEventListener('mouseenter', function() {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reset when audio ends
         firstIntervju.addEventListener('ended', function() {
             playAudio = false;
-            videoSpan.style.backgroundImage = "url('assests/Filip.jpg')";
+            videoSpan.style.backgroundImage = "url('/assests/Filip.jpg')";
         });
     }
 });
