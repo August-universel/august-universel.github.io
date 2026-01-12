@@ -30,22 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
     let firstIntervju= new Audio('assests/August_Persson_2B.mp3');
     if (videoSpan) {
         videoSpan.addEventListener('click', function() {
-            videoSpan.style.backgroundImage = "url('assests/play_Filip.gif')";
             
             if(playAudio===false){
+                videoSpan.style.backgroundImage = "url('assests/play_Filip.gif')";
                 playAudio=true;
                 firstIntervju.play();
                 
             setTimeout(function() {
                 videoSpan.style.backgroundImage = "url('assests/slut_Filip.jpg')";
-            }, 35);
+            }, 150);
             }
             else{
+                videoSpan.style.backgroundImage = "url('assests/stop_Filip.gif')";
                 playAudio=false;
                 firstIntervju.pause();
                 setTimeout(function() {
                 videoSpan.style.backgroundImage = "url('assests/start_Filip.jpg')";
-            }, 35);
+            }, 150);
             }
         });
 
