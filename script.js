@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 filipPicture.style.backgroundImage = "url('/assests/slut_Filip.jpg')";
             }, 150);
             } 
-            else{
+            else if(playingFilipsIntervju===true){
                 filipPicture.style.backgroundImage = "url('/assests/stop_Filip.gif')";
                 playingFilipsIntervju=false;
                 firstIntervju.pause();
