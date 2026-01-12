@@ -23,6 +23,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize first slide
     showSlide(0);
+
+    // Add click event to the span for playing animation
+    const videoSpan = document.querySelector('.intervjuer span');
+    let playAudio=false;
+    let firstIntervju= new Audio('assests/August_Persson_2B.mp3');
+    if (videoSpan) {
+        videoSpan.addEventListener('click', function() {
+            videoSpan.style.backgroundImage = "url('assests/play_Filip.gif')";
+            
+            if(playAudio===false){
+                playAudio=true;
+                firstIntervju.play();
+                
+            setTimeout(function() {
+                videoSpan.style.backgroundImage = "url('assests/slut_Filip.jpg')";
+            }, 35);
+            }
+            else{
+                playAudio=false;
+                firstIntervju.pause();
+                setTimeout(function() {
+                videoSpan.style.backgroundImage = "url('assests/start_Filip.jpg')";
+            }, 35);
+            }
+        });
+
+        videoSpan.addEventListener('mouseout', function() {
+            if (playAudio === false) {
+                videoSpan.style.backgroundImage = "url('assests/Filip.jpg')";
+            }
+        });
+        videoSpan.addEventListener('mouseenter', function() {
+            if (playAudio === false) {
+                videoSpan.style.backgroundImage = "url('assests/start_Filip.jpg')";
+            }
+        });
+
+        // Reset when audio ends
+        firstIntervju.addEventListener('ended', function() {
+            playAudio = false;
+            videoSpan.style.backgroundImage = "url('assests/Filip.jpg')";
+        });
+    }
 });
 
 const ctx = document.getElementById('myChart');
@@ -45,8 +88,6 @@ function createChart(data) {
     '#4BC0C0',
     '#9966FF',
     '#FF9F40',
-    '#FF6384',
-    '#C9CBCF'
   ];
 
   new Chart(ctx, {
@@ -61,8 +102,17 @@ function createChart(data) {
       }]
     },
     options: {
-      responsive: true,
-      maintainAspectRatio: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        onClick: (event, activeElements) => {
+          if (activeElements.length > 0) {
+            const index = activeElements[0].index;
+            const label = data[index].Kursgrupp;
+            const value = data[index].Högskolepoäng;
+            console.log(`Bar clicked: ${label} - ${value} HP`);
+            showCourse(label);
+          }
+        },
       plugins: {
         legend: {
           display: false
@@ -82,4 +132,23 @@ function createChart(data) {
       }
     }
   });
+}
+
+
+
+function showCourse(course){
+    fetch('kurser.json')
+    .then(function(response) {
+        if(response.ok) {
+            return response.json();
+        }
+    })
+    .then(function(data) {
+        const courses = data[0];
+        const matchingCourses = courses.filter(c => c.Kursgrupp === course);
+                
+        alert(`Kurser i ${course}:\n\n${matchingCourses.map(c => c.Kurs).join('\n')}`);
+        
+        console.log(`Courses in ${course}:`, matchingCourses);
+    });
 }

@@ -1,0 +1,26 @@
+[
+    [
+  { "Kursgrupp": "Systemperspektiv", "Kurs": "Grundläggande Informatik" },
+  { "Kursgrupp": "Verksamhetsutveckling", "Kurs": "Organisatoriska system" },
+  { "Kursgrupp": "Verksamhetsutveckling", "Kurs": "Verksamhetsmodellering" },
+  { "Kursgrupp": "Verksamhetsutveckling", "Kurs": "Verksamhetens IT-säkerhet" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Grundläggande programmering" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Databaser och datamodellering" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Objektorienterad programmering och datastrukturer" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Introduktion till data analytics" },
+
+  { "Kursgrupp": "Verksamhetsutveckling", "Kurs": "Problemstrukturering" },
+  { "Kursgrupp": "Projektmetodik", "Kurs": "Grundläggande projektmetodik" },
+  { "Kursgrupp": "Verksamhetsutveckling", "Kurs": "Utvärdering och implementering" },
+  { "Kursgrupp": "Examensarbete", "Kurs": "Vetenskapliga metoder" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Objektorienterad analys och processbeskrivning" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Utveckling av webbaserade applikationer" },
+  { "Kursgrupp": "Systemutveckling", "Kurs": "Säkerställning av kvalitet i IS" },
+  { "Kursgrupp": "Projektmetodik", "Kurs": "Projektledning för digitala innovationer" },
+
+  { "Kursgrupp": "Praktik/Frikurser", "Kurs": "Verksamhetsförlagd praktik" },
+  { "Kursgrupp": "Examensarbete", "Kurs": "Examensarbete" },
+  { "Kursgrupp": "Praktik/Frikurser", "Kurs": "Valfri kurs(er)" }
+]
+
+]

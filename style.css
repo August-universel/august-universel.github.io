@@ -147,3 +147,34 @@ canvas {
     overflow: hidden;
     flex: 1;
 }
+.storIntervjuer{
+    background-color: beige;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.intervjuer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.intervjuer h1 {
+    width: 100%;
+}
+
+.intervjuer span {
+    width: 350px;
+    height: 350px;
+    background-image: url('assests/Filip.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.intervjuer p {
+    flex: 1;
+    min-width: 300px;
+}
