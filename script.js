@@ -1,3 +1,22 @@
+const imageSources = [
+    '/assets/play_Filip.gif',
+    '/assets/slut_Filip.jpg',
+    '/assets/stop_Filip.gif',
+    '/assets/start_Filip.jpg',
+    '/assets/Filip.jpg',
+    '/assets/slideshow1.jpg',
+    '/assets/slideshow2.jpg',
+    '/assets/slideshow3.jpg'
+];
+
+const preloadedImages = [];
+
+imageSources.forEach(src => {
+    const img = new Image();
+    img.src = src;
+    preloadedImages.push(img);
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slideshow > div');
@@ -25,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(0);
 
     // Add click event to the span for playing animation
-    const filipPicture = document.querySelector('.intervjuer span');
+    const filipPicture = document.getElementById('firstIntervju');
     let playingFilipsIntervju=false;
     let firstIntervju= new Audio('/assests/August_Persson_2B.mp3');
     if (filipPicture) {

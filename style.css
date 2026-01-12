@@ -159,9 +159,11 @@ canvas {
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
+    margin-left: 10%;
 }
 
 .intervjuer h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
 }
 
@@ -176,5 +178,6 @@ canvas {
 
 .intervjuer p {
     flex: 1;
-    min-width: 300px;
+    max-width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
