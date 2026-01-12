@@ -149,7 +149,7 @@ canvas {
     overflow: hidden;
     flex: 1;
 }
-.storIntervjuer{
+.filipIntervju{
     background-color: beige;
     padding: 40px 20px;
     display: flex;
@@ -169,7 +169,7 @@ canvas {
     width: 100%;
 }
 
-.intervjuer span {
+.intervjuBildFilip {
     width: 350px;
     height: 350px;
     background-image: url('assests/Filip.jpg');
@@ -182,4 +182,17 @@ canvas {
     flex: 1;
     max-width: 500px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.AugustIntervju{
+    background-color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.intervjuBildAugust {
+    width: 350px;
+    height: 350px;
+    background-image: url('assests/August.jpg');
+    background-size: cover;
+    background-position: center;
 }
