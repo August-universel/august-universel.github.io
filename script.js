@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 firstIntervju.play();
                 
             setTimeout(function() {
-                filipPicture.style.backgroundImage = "url('/assests/slut_Filip.jpg')";
+                filipPicture.style.backgroundImage = "url('/assests/slut_filip.jpg')";
             }, 150);
             } 
             else if(playingFilipsIntervju===true){
