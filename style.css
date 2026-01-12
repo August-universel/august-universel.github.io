@@ -7,7 +7,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #b2ac88;
+    background-color: #F1F4C0;
     border-bottom: 2px solid black;
     padding: 20px;
     max-height: 70px;
@@ -138,6 +138,8 @@ canvas {
     height: 500px;
     position: relative;
     flex-shrink: 0;
+    margin-left: 10%;
+
 }
 
 .textOmKurs{
