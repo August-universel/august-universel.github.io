@@ -6,7 +6,12 @@ const imageSources = [
     '/assets/Filip.jpg',
     '/assets/slideshow1.jpg',
     '/assets/slideshow2.jpg',
-    '/assets/slideshow3.jpg'
+    '/assets/slideshow3.jpg',
+    '/assets/August.jpg',
+    '/assets/stop_August.gif',
+    '/assets/start_August.jpg',
+    '/assets/play_August.jpg',
+    '/assets/slut_August.jpg'
 ];
 
 const preloadedImages = [];
@@ -14,7 +19,6 @@ const preloadedImages = [];
 imageSources.forEach(src => {
     const img = new Image();
     img.src = src;
-    preloadedImages.push(img);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
