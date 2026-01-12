@@ -25,46 +25,46 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(0);
 
     // Add click event to the span for playing animation
-    const videoSpan = document.querySelector('.intervjuer span');
-    let playAudio=false;
+    const filipPicture = document.querySelector('.intervjuer span');
+    let playingFilipsIntervju=false;
     let firstIntervju= new Audio('/assests/August_Persson_2B.mp3');
-    if (videoSpan) {
-        videoSpan.addEventListener('click', function() {
+    if (filipPicture) {
+        filipPicture.addEventListener('click', function() {
             
-            if(playAudio===false){
-                videoSpan.style.backgroundImage = "url('/assests/play_Filip.gif')";
-                playAudio=true;
+            if(playingFilipsIntervju===false){
+                filipPicture.style.backgroundImage = "url('/assests/play_Filip.gif')";
+                playingFilipsIntervju=true;
                 firstIntervju.play();
                 
             setTimeout(function() {
-                videoSpan.style.backgroundImage = "url('/assests/slut_Filip.jpg')";
+                filipPicture.style.backgroundImage = "url('/assests/slut_Filip.jpg')";
             }, 150);
             } 
             else{
-                videoSpan.style.backgroundImage = "url('/assests/stop_Filip.gif')";
-                playAudio=false;
+                filipPicture.style.backgroundImage = "url('/assests/stop_Filip.gif')";
+                playingFilipsIntervju=false;
                 firstIntervju.pause();
                 setTimeout(function() {
-                videoSpan.style.backgroundImage = "url('/assests/start_Filip.jpg')";
+                filipPicture.style.backgroundImage = "url('/assests/start_Filip.jpg')";
             }, 150);
             }
         });
 
-        videoSpan.addEventListener('mouseout', function() {
-            if (playAudio === false) {
-                videoSpan.style.backgroundImage = "url('/assests/Filip.jpg')";
+        filipPicture.addEventListener('mouseout', function() {
+            if (playingFilipsIntervju === false) {
+                filipPicture.style.backgroundImage = "url('/assests/Filip.jpg')";
             }
         });
-        videoSpan.addEventListener('mouseenter', function() {
-            if (playAudio === false) {
-                videoSpan.style.backgroundImage = "url('assests/start_Filip.jpg')";
+        filipPicture.addEventListener('mouseenter', function() {
+            if (playingFilipsIntervju === false) {
+                filipPicture.style.backgroundImage = "url('assests/start_Filip.jpg')";
             }
         });
 
         // Reset when audio ends
         firstIntervju.addEventListener('ended', function() {
-            playAudio = false;
-            videoSpan.style.backgroundImage = "url('/assests/Filip.jpg')";
+            playingFilipsIntervju = false;
+            filipPicture.style.backgroundImage = "url('/assests/Filip.jpg')";
         });
     }
 });
