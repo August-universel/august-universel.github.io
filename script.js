@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Add click event to the span for playing animation
 const filipPicture = document.getElementById('firstIntervju');
 let playingFilipsIntervju=false;
-let firstIntervju= new Audio('/assests/August_Persson_2B.mp3');
+let firstIntervju= new Audio('/assests/Filip_Audio.mp3');
 if (filipPicture) {
     filipPicture.addEventListener('click', function() {
         
@@ -93,6 +93,8 @@ if (filipPicture) {
 }
 
 let playingAugustsIntervju=false;
+let secondIntervju= new Audio('/assests/August_Audio.mp3');
+
 const secondIntervjuPicture = document.getElementById('secondIntervju');
 if(secondIntervjuPicture){
     secondIntervjuPicture.addEventListener('click', function() {
@@ -100,6 +102,7 @@ if(secondIntervjuPicture){
             if(playingAugustsIntervju===false){
                 secondIntervjuPicture.style.backgroundImage = "url('/assests/play_August.gif')";
                 playingAugustsIntervju=true;
+                secondIntervju.play();
                 
             setTimeout(function() {
                 secondIntervjuPicture.style.backgroundImage = "url('/assests/slut_August.jpg')";
@@ -108,6 +111,7 @@ if(secondIntervjuPicture){
             else if(playingAugustsIntervju===true){
                 secondIntervjuPicture.style.backgroundImage = "url('/assests/stop_August.gif')";
                 playingAugustsIntervju=false;
+                secondIntervju.pause();
                 setTimeout(function() {
                 secondIntervjuPicture.style.backgroundImage = "url('/assests/start_August.jpg')";
             }, 150);
@@ -123,6 +127,10 @@ if(secondIntervjuPicture){
                 secondIntervjuPicture.style.backgroundImage = "url('/assests/start_August.jpg')";
             }
         });
+        secondIntervju.addEventListener('ended', function() {
+        playingAugustsIntervju = false;
+        secondIntervjuPicture.style.backgroundImage = "url('/assests/August.jpg')";
+    });
 
 }
 
@@ -162,7 +170,7 @@ function createChart(data) {
     options: {
         responsive: true,
         maintainAspectRatio: false,
-        onClick: (event, activeElements) => {
+        onHover: (event, activeElements) => {
           if (activeElements.length > 0) {
             const index = activeElements[0].index;
             const label = data[index].Kursgrupp;
@@ -171,6 +179,7 @@ function createChart(data) {
             showCourse(label);
           }
         },
+        
       plugins: {
         legend: {
           display: false
@@ -194,19 +203,18 @@ function createChart(data) {
 
 
 
-function showCourse(course){
+function showCourse(course) {
     fetch('kurser.json')
-    .then(function(response) {
-        if(response.ok) {
-            return response.json();
-        }
-    })
-    .then(function(data) {
+    .then(response => response.json())
+    .then(data => {
         const courses = data[0];
         const matchingCourses = courses.filter(c => c.Kursgrupp === course);
-                
-        alert(`Kurser i ${course}:\n\n${matchingCourses.map(c => c.Kurs).join('\n')}`);
         
-        console.log(`Courses in ${course}:`, matchingCourses);
+        const detailsDiv = document.getElementById('courseDetails');
+        const listUl = document.getElementById('courseList');
+        
+        detailsDiv.querySelector('h1').innerText = `Kurser i ${course}`;
+        detailsDiv.querySelector('p').innerText = "Följande kurser ingår i denna grupp:";
+        listUl.innerHTML = matchingCourses.map(c => `<li>${c.Kurs}</li>`).join('');
     });
 }
