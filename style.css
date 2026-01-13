@@ -75,10 +75,8 @@ header img {
     position: absolute;
     top: 50%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
     border: none;
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 15px 17px;
     cursor: pointer;
     transition: background-color 0.3s;
     z-index: 10;
@@ -92,8 +90,17 @@ header img {
     left: 10px;
 }
 
+.prev img{
+    width: 20px;
+    height: 20px;
+}
+
 .next {
     right: 10px;
+}
+.next img{
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -187,6 +194,7 @@ canvas {
     flex: 1;
     max-width: 500px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
 }
 
 .intervjuer li{
@@ -234,11 +242,10 @@ footer a{
     margin-bottom: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    margin-left: 2%;
 
 }
 footer p {
     padding: 0px;
-    margin-right: 2%;
+    margin-right: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
