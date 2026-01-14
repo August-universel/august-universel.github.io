@@ -1,24 +1,16 @@
 const imageSources = [
-    '/assets/play_Filip.gif',
-    '/assets/slut_Filip.jpg',
-    '/assets/stop_Filip.gif',
-    '/assets/start_Filip.jpg',
-    '/assets/Filip.jpg',
-    '/assets/slideshow1.jpg',
-    '/assets/slideshow2.jpg',
-    '/assets/slideshow3.jpg',
-    '/assets/August.jpg',
-    '/assets/stop_August.gif',
-    '/assets/start_August.jpg',
-    '/assets/play_August.jpg',
-    '/assets/slut_August.jpg'
+    '/assests/play_Filip.gif', 
+    '/assests/stop_Filip.gif',
+    '/assests/play_August.gif', 
+    '/assests/stop_August.gif'
 ];
 
-const preloadedImages = [];
+const preloadCache = [];
 
 imageSources.forEach(src => {
     const img = new Image();
     img.src = src;
+    preloadCache.push(img); 
 });
 
 document.addEventListener('DOMContentLoaded', function() {
