@@ -2,7 +2,16 @@ const imageSources = [
     '/assests/play_Filip.gif', 
     '/assests/stop_Filip.gif',
     '/assests/play_August.gif', 
-    '/assests/stop_August.gif'
+    '/assests/stop_August.gif',
+    '/assests/start_Filip.jpg',
+    '/assests/slut_filip.jpg',
+    '/assests/start_August.jpg',
+    '/assests/slut_August.jpg',
+    '/assests/Filip.jpg',
+    '/assests/August.jpg',
+    '/assests/slideshow1.jpg',
+    '/assests/slideshow2.jpg',
+    '/assests/slideshow3.jpg'
 ];
 
 const preloadCache = [];
