@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 2500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="100%" viewBox="0 0 2500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(1,0,0,1,-3210.649743,-14.440453)">
         <g id="Artboard2" transform="matrix(1,0,0,1,660.649743,14.440453)">
             <rect x="2550" y="0" width="2500" height="500" style="fill:none;"/>
@@ -14,13 +14,13 @@
                 <g transform="matrix(10.808735,0,0,10.718251,2938.282738,-23.235901)">
                     <g transform="matrix(27.989642,0,0,27.989642,195.141747,35)">
                     </g>
-                    <text x="8.213px" y="35px" style="font-family:'Verdana', sans-serif;font-size:27.99px;fill:white;stroke:black;stroke-width:0.42px;">P<tspan x="24.532px 35.077px 50.665px 66.705px 77.878px 93.288px 119.113px 134.005px 149.593px 155.874px 162.156px 177.43px " y="35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px ">rogramkollen</tspan></text>
+                    <text x="8.213px" y="35px" style="font-family:'Verdana', sans-serif;font-size:27.99px;fill:white;">P<tspan x="24.532px 35.077px 50.665px 66.705px 77.878px 93.288px 119.113px 134.005px 149.593px 155.874px 162.156px 177.43px " y="35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px ">rogramkollen</tspan></text>
                 </g>
                 <g transform="matrix(1.038331,0,0,1.038331,-796.029704,-83.677422)">
-                    <circle cx="3466.391" cy="321.401" r="212.101" style="fill:rgb(37,37,37);stroke:white;stroke-width:20.06px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                    <circle cx="3466.391" cy="321.401" r="212.101" style="fill:rgb(37,37,37);stroke:white;stroke-width:20.06px;"/>
                 </g>
                 <g transform="matrix(1.765765,-0,0,1.765765,2803.462051,266.033324)">
-                    <path d="M124.592,0C124.592,-68.81 68.81,-124.592 -0,-124.592C-65.534,-124.592 -118.659,-71.466 -118.659,-5.933C-118.659,56.151 -68.33,106.481 -6.245,106.481C52.39,106.481 99.923,58.947 99.923,0.312C99.923,-54.874 55.186,-99.611 -0,-99.611C-51.737,-99.611 -93.678,-57.67 -93.678,-5.933C-93.678,42.355 -54.533,81.5 -6.245,81.5C38.594,81.5 74.942,45.151 74.942,0.312C74.942,-41.077 41.39,-74.63 -0,-74.63C-37.94,-74.63 -68.697,-43.873 -68.697,-5.933C-68.697,28.558 -40.736,56.519 -6.245,56.519C24.797,56.519 49.962,31.354 49.962,0.312C49.962,-27.281 27.593,-49.649 -0,-49.649C-24.144,-49.649 -43.716,-30.077 -43.716,-5.933C-43.716,14.762 -26.94,31.538 -6.245,31.538C11,31.538 24.981,17.558 24.981,0.312C24.981,-13.484 13.797,-24.669 -0,-24.669C-10.347,-24.669 -18.736,-16.28 -18.736,-5.933C-18.736,0.965 -13.143,6.557 -6.245,6.557C-2.796,6.557 0,3.761 -0,0.312" style="fill:none;stroke:white;stroke-width:9.44px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                    <path d="M124.592,0C124.592,-68.81 68.81,-124.592 -0,-124.592C-65.534,-124.592 -118.659,-71.466 -118.659,-5.933C-118.659,56.151 -68.33,106.481 -6.245,106.481C52.39,106.481 99.923,58.947 99.923,0.312C99.923,-54.874 55.186,-99.611 -0,-99.611C-51.737,-99.611 -93.678,-57.67 -93.678,-5.933C-93.678,42.355 -54.533,81.5 -6.245,81.5C38.594,81.5 74.942,45.151 74.942,0.312C74.942,-41.077 41.39,-74.63 -0,-74.63C-37.94,-74.63 -68.697,-43.873 -68.697,-5.933C-68.697,28.558 -40.736,56.519 -6.245,56.519C24.797,56.519 49.962,31.354 49.962,0.312C49.962,-27.281 27.593,-49.649 -0,-49.649C-24.144,-49.649 -43.716,-30.077 -43.716,-5.933C-43.716,14.762 -26.94,31.538 -6.245,31.538C11,31.538 24.981,17.558 24.981,0.312C24.981,-13.484 13.797,-24.669 -0,-24.669C-10.347,-24.669 -18.736,-16.28 -18.736,-5.933C-18.736,0.965 -13.143,6.557 -6.245,6.557C-2.796,6.557 0,3.761 -0,0.312" style="fill:none;stroke:white;stroke-width:9.44px;"/>
                 </g>
             </g>
         </g>

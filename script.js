@@ -175,8 +175,6 @@ function createChart(data) {
           if (activeElements.length > 0) {
             const index = activeElements[0].index;
             const label = data[index].Kursgrupp;
-            const value = data[index].Högskolepoäng;
-            console.log(`Bar clicked: ${label} - ${value} HP`);
             showCourse(label);
           }
         },
